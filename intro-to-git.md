@@ -151,6 +151,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 There are three different ways that Git perceives changes: working, staged, 
 and committed. To "save" -- or in Git's lingo, "commit" -- a change, you 
 perform the following steps:
+
 1. **Make the actual change.** A "change" can be as little or big as you want 
    -- there are basically no restrictions on how small or large it can be, but 
    when in doubt, smaller changes are better than bigger ones because they are 
@@ -168,17 +169,17 @@ perform the following steps:
 
    Run `git status` again and you will see the following helpful information.
 
-```
-On branch master
+   ```
+   On branch master
 
-Initial commit
+   Initial commit
 
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
+   Changes to be committed:
+   (use "git rm --cached <file>..." to unstage)
 
-	new file:   file1.txt
+           new file:   file1.txt
 
-```
+   ```
 
    The change we made -- the addition of `file1.txt` -- will be committed, or 
    permanently saved, the next time we run `git commit`. However, if we change 
@@ -205,7 +206,7 @@ Changes to be committed:
 ```
 
 *__NOTE__: At this point, Git may ask you for some information if it doesn't 
-have it already, such as your name and email.  This is used to store **who** 
+have it already, such as your name and email.  This is used to store who 
 committed each change in the history, which is very useful for collaborations.  
 This information is a global setting, so once you set it for the first time on 
 your computer, you never have to do it again (unless you want to change it).*
