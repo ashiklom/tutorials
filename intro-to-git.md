@@ -196,11 +196,11 @@ perform the following steps:
    otherwise, a simpler approach is to enter your message directly into the 
    command by running `git commit -m "<your message here>"` (making sure to 
    surround the message in quotes. For our example, enter the following: `git 
-   commit -m "Created file1.txt"` and you will see the following summary of 
-   the change:
+   commit -m "Create file1.txt"` and you will see the following summary of the 
+   change:
 
 ```
-[master (root-commit) 810e800] Created file1.txt
+[master (root-commit) 810e800] Create file1.txt
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 file1.txt
 ```
@@ -220,7 +220,7 @@ commit 810e800fb4f35d18f06fd385212b7d1830c0f099
 Author: <your name>
 Date:   <the current date and time>
 
-    Created file1.txt
+    Create file1.txt
 ```
 
 That long string of letters and numbers after "commit" is the automatically 
@@ -279,6 +279,21 @@ your own (and that I may address in a later post).
 
 Once you are satisfied with the text you want to add, run `git add file1.txt` 
 to stage this change followed by `git commit -m "<message>"` to permanently 
-save it. 
+save it. Now, running `git log` shows both the original change and the one we 
+just made:
+
+```
+commit 33b2866809b16fb0e95f48d9c34f01f812ed97a5
+Author: Alexey Shiklomanov (LVM64) <alexey.shiklomanov@gmail.com>
+Date:   Mon Sep 14 00:06:08 2015 -0400
+
+    Add text to file1.txt
+
+commit 810e800fb4f35d18f06fd385212b7d1830c0f099
+Author: Alexey Shiklomanov (LVM64) <alexey.shiklomanov@gmail.com>
+Date:   Sun Sep 13 23:27:54 2015 -0400
+
+    Create file1.txt
+```
 
 ## Branching
